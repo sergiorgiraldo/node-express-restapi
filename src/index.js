@@ -19,8 +19,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(BodyParser.urlencoded({ extended: false }));
-app.use(BodyParser.json());
+app.use(BodyParser.urlencoded({ extended: false })); //for POST requests
+app.use(BodyParser.json()); //for POST requests
 
 // Custom Middleware
 
